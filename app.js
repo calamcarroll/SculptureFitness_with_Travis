@@ -4,7 +4,7 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var prod =  process.env.NODE_ENV === 'prod';
 var index = require('./routes/index');
 // var users = require('./routes/users');
 var ClientPrograms = require('./routes/ClientPrograms');
@@ -30,7 +30,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(express.static(path.join(__dirname, 'build')));
+if (prod) {
+    app.use(express.static(path.join(__dirname, 'dist')));
+} else {
+    app.use(express.static(path.join(__dirname, 'build')));
+}
+
 app.use("/public", express.static(__dirname + "/public"));
 
 app.use('/', index);
