@@ -2,12 +2,16 @@
     "env": {
         "node": true
     },
+    "plugins":[
+        "json"
+    ],
     "extends": "eslint:recommended",
     "rules": {
         "indent": [
             "error",
             4
         ],
+
         "linebreak-style": [
             "error",
             "windows"
