@@ -1,0 +1,73 @@
+<html ng-app="SculptureFitness" >
+<head>
+    <title>SculptureFitness</title>
+
+
+    <meta name="google-signin-client_id" content="278471159754-kijuvn7d6n51j13k47a9tjmgerf7ukmp.apps.googleusercontent.com.apps.googleusercontent.com">
+
+
+
+
+
+
+</head>
+
+
+<body ng-controller="mainController">
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">Sculpture Fitness</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#/"><i class="active"></i> Home</a></li>
+
+            <li class="dropdown"  uib-dropdown>
+                <a class="dropdown-toggle" data-toggle="dropdown"  href="#programs" uib-dropdown-toggle>Programs<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#addProgram">Create Programs</a></li>
+                </ul>
+
+
+            </li>
+            <!--<li><a href="#addProgram"><i class="active"></i> Add Program</a></li>-->
+
+            <li class="dropdown" uib-dropdown>
+                <a class="dropdown-toggle" data-toggle="dropdown" uib-dropdown-toggle href="#diet">Diet<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#addDiet">Create Diet</a></li>
+                </ul>
+            </li>
+            <li><a href="#findGym">Find a gym</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- MAIN CONTENT AND INJECTED VIEWS -->
+<div id="main">
+
+
+
+
+    <div ng-view></div>
+
+</div> <!-- End of main div -->
+<footer class="text-center">
+    <p>For more projects view my work on <a href="https://github.com/calamcarroll">GitHub</a></p>
+</footer>
+
+</body>
+</html>
