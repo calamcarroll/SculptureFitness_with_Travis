@@ -32,49 +32,49 @@ app.config(function($routeProvider) {
 
     // route for the home page
         .when('/', {
-            templateUrl : 'pages/home.ejs',
+            templateUrl : 'public/pages/home.ejs',
             controller  : 'mainController'
         })
 
         // route for the programs page
         .when('/programs', {
-            templateUrl : 'pages/programs.ejs',
+            templateUrl : 'public/pages/programs.ejs',
             controller  : 'programsController'
         })
 
         //route for the add programs page
         .when('/addProgram', {
-            templateUrl : 'pages/addprogram.ejs',
+            templateUrl : 'public/pages/addprogram.ejs',
             controller  : 'addProgramsController'
         })
         .when('/updateProgram', {
-            templateUrl : 'pages/updateProgram.ejs',
+            templateUrl : 'public/pages/updateProgram.ejs',
             controller  : 'updateController'
         })
         .when('/findGym', {
-            templateUrl : 'pages/findGym.ejs',
+            templateUrl : 'public/pages/findGym.ejs',
             controller  : 'findGymController'
         })
         .when('/addDiet', {
-            templateUrl : 'pages/addDiet.ejs',
+            templateUrl : 'public/pages/addDiet.ejs',
             controller  : 'addDietController'
         })
         .when('/updateDiet', {
-            templateUrl : 'pages/updateDiet.ejs',
+            templateUrl : 'public/pages/updateDiet.ejs',
             controller  : 'updateDietController'
         })
         .when('/Register',{
-            templateUrl : 'pages/Register.ejs',
+            templateUrl : 'public/pages/Register.ejs',
             controller : 'registerController'
         })
         .when('/Login',{
-            templateUrl : 'pages/Login.ejs',
+            templateUrl : 'public/pages/Login.ejs',
             controller : 'loginController'
         })
 
         // route for the diet page
         .when('/diet', {
-            templateUrl : 'pages/diet.ejs',
+            templateUrl : 'public/pages/diet.ejs',
             controller  : 'dietController'
         });
 
