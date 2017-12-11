@@ -1,6 +1,6 @@
-var app = angular.module('SculptureFitness');
 
-app.controller('updateController', ['$scope','$http', '$location','myService', function($scope, $http, $location, myService) {
+
+function updateController($scope, $http, $location, myService) {
     // create a message to display in our view
     $scope.message = 'Programs Page!'
 
@@ -49,6 +49,6 @@ app.controller('updateController', ['$scope','$http', '$location','myService', f
         }
     };
 
-}
-]);
+};
+module.exports = updateController;
 

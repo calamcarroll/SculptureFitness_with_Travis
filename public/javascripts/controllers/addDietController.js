@@ -1,6 +1,5 @@
-var app = angular.module('SculptureFitness');
 
-app.controller('addDietController', ['$scope', '$location', '$http', function($scope, $location, $http) {
+function addDietController($scope, $location, $http) {
 
     $scope.formData = {};
 
@@ -18,4 +17,5 @@ app.controller('addDietController', ['$scope', '$location', '$http', function($s
                 console.log('Error: ' + data);
             });
     };
-}]);
+};
+module.exports = addDietController;

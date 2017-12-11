@@ -1,6 +1,6 @@
-var app = angular.module('SculptureFitness');
 
-app.controller('updateDietController', ['$scope','$http', '$location','myOtherService', function($scope, $http, $location, myOtherService) {
+
+function updateDietController($scope, $http, $location, myOtherService) {
     // create a message to display in our view
     $scope.message = 'Diet Page!'
 
@@ -31,6 +31,7 @@ app.controller('updateDietController', ['$scope','$http', '$location','myOtherSe
     };
 
 
-}
-]);
+};
+
+module.exports = updateDietController;
 

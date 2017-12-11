@@ -1,15 +1,16 @@
 
 
-var app = angular.module('SculptureFitness');
 
 
-app.controller('findGymController', function($scope) {
+
+function findGymController($scope) {
 
     $scope.message = 'Maps to be displayed here';
 
 
 
-});
+};
+module.exports = findGymController;
 
 
 

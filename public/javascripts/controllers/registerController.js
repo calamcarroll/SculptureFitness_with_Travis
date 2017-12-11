@@ -1,6 +1,5 @@
-var app = angular.module('SculptureFitness');
 
-app.controller('registerController', ['$scope','$http', '$location', function($scope, $http, $location) {
+function registerController($scope, $http, $location) {
     $scope.message = 'Register here';
     $scope.formData = {};
 
@@ -18,4 +17,5 @@ app.controller('registerController', ['$scope','$http', '$location', function($s
                 console.log('Error: ' + data);
             });
     };
-}]);
+};
+module.exports = registerController;
