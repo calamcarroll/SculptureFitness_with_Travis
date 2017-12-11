@@ -1,5 +1,7 @@
 require('angular');
 require('angular-route');
+require('../../node_modules/bootstrap/dist/css/bootstrap.css' );
+require('../../node_modules/font-awesome/css/font-awesome.css' );
 var app = angular.module('SculptureFitness', ['ngRoute']);
 require('./controllers/index');
 
