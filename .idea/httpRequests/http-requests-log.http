@@ -1,3 +1,129 @@
+GET http://localhost:3000/users/5a1ff2f4996d2f26200bccb8
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T103010.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T103004.200.json
+
+###
+
+GET http://localhost:3000/users/Ccarroll/ceatharlach
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102958.404.html
+
+###
+
+GET http://localhost:3000/users/Ccarroll/ceatharlach
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102920.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102859.200.json
+
+###
+
+GET http://localhost:3000/users/Calam%20123/cc123
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102851.200.json
+
+###
+
+GET http://localhost:3000/users/Calam%20123/cc123
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102850.200.json
+
+###
+
+GET http://localhost:3000/users/Calam%20123/cc123
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102755.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102605.200.json
+
+###
+
+GET http://localhost:3000/users/5a2d4cabec7fcf1ebc06417d
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102556.404.html
+
+###
+
+GET http://localhost:3000/users/MarkF/ceatharlach
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102542.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102509.200.json
+
+###
+
+GET http://localhost:3000/users/Calam%20123/cc123
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102447.200.json
+
+###
+
+GET http://localhost:3000/users
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-10T102426.200.json
+
+###
+
 GET http://localhost:3000/users
 Accept:*/*
 Cache-Control:no-cache
@@ -325,150 +451,6 @@ Cache-Control:no-cache
 Content-Type:application/json
 
 {   "gymName": "Kingfisher",   "MonthlyPrice": 60,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-###
-
-GET http://localhost:3000/Location/5a1f1751ce78941f8880b1a0
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T082729.200.json
-
-###
-
-POST http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082345.200.json
-
-###
-
-PUT http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082336.404.html
-
-###
-
-PUT http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082324.404.html
-
-###
-
-PUT http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082301.404.html
-
-###
-
-PUT http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082222.404.html
-
-###
-
-PUT http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082211.404.html
-
-###
-
-PUT http://localhost:3000/Location/5a1f16c3ce78941f8880b19f
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082202.404.html
-
-###
-
-DELETE http://localhost:3000/Location/5a1f16c3ce78941f8880b19f
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T082144.200.json
-
-###
-
-GET http://localhost:3000/Location/5a1f16c3ce78941f8880b19f
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T082138.200.json
-
-###
-
-GET http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T082129.200.json
-
-###
-
-POST http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082123.200.json
-
-###
-
-POST http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-{   "gymName": "Kingfisher",   "MonthlyPrice": 45,   "HalfYearPrice": 200, "FullYearPrice": 400, "Longitude": 1.3120825020, "Latitude": 4.2872628161 }
-
-<> 2017-11-29T082047.404.html
-
-###
-
-GET http://localhost:3000/Location
-Accept:*/*
-Cache-Control:no-cache
-Content-Type:application/json
-
-<> 2017-11-29T081835.200.json
 
 ###
 

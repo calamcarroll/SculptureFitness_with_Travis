@@ -11,7 +11,7 @@ app.controller('registerController', ['$scope','$http', '$location', function($s
             .success(function (data) {
                 alert('Congratulations ' + $scope.formData.fName + ' You have successfully registered ');
                 $scope.Users = data;
-                $location.path('/');
+                $location.path('/Login');
                 console.log(data);
             })
             .error(function (data) {

@@ -11,8 +11,11 @@ var ClientPrograms = require("./routes/ClientPrograms");
 var ClientUsers = require("./routes/ClientUsers");
 var ClientDietPrograms = require("./routes/ClientDietPrograms");
 var GymLocations = require("./routes/GymLocations");
-
+var passport = require('passport')
 var app = express();
+var social = require('./passport/passport')(app,passport);
+
+
 
 
 
