@@ -31,7 +31,7 @@ test.describe('add Programs page', function() {
         driver.wait(until.elementLocated(pageSelector), 2000);
         navBarSelector = By.tagName('nav');
     } );
-    test.it( 'shows the nav bar', function() {
+    test.it( 'shows the nav bar on add programs page', function() {
         driver.findElement(navBarSelector)
             .then(function(element) {
                 expect(element).to.not.equal(null );
