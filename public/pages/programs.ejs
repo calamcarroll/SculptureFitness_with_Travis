@@ -22,7 +22,7 @@
                 <tbody id="myTable">
 
                 <tbody ng-repeat="program in programs | filter:test">
-                <td>
+                <td name="ExerciseName">
 
                     <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.ExerciseName}}</span>
                 </td>
@@ -30,7 +30,7 @@
                 <td>
                     <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.MuscleType}}</span>
                 </td>
-                <td>
+                <td name="Sets">
                     <span style="height:55px; font-size:20px; margin-left:20px; margin-right:20px; valign="middle";>{{program.Sets}}</span>
                 </td>
                 <td>
