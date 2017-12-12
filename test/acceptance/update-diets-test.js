@@ -12,14 +12,14 @@ var pageSelector;
 var noDiet;
 var navBarSelector ;
 
-test.describe('add Diets page', function() {
+test.describe('update Diets page', function() {
     this.timeout(mochaTimeOut);
     test.before( function() {
         driver = new webdriver.Builder()
             .withCapabilities( webdriver.Capabilities.chrome() )
             .build();
-        pageSelector = By.id('addDiet');
-        driver.get('http://localhost:3000/#/addDiet');
+        pageSelector = By.id('updateDiet');
+        driver.get('http://localhost:3000/#/updateDiet');
         driver.wait(until.elementLocated(By.tagName('h1')), 2000);
         driver.findElements(By.tagName('tr'))
             .then( function( diet ) {
@@ -27,26 +27,26 @@ test.describe('add Diets page', function() {
             });
     } );
     test.beforeEach( function() {
-        driver.get('http://localhost:3000/#/addDiet');
+        driver.get('http://localhost:3000/#/updateDiet');
         driver.wait(until.elementLocated(pageSelector), 2000);
         navBarSelector = By.tagName('nav');
     } );
-    test.it( 'shows the nav bar on add Diets page', function() {
+    test.it( 'shows the nav bar on update Diets page', function() {
         driver.findElement(navBarSelector)
             .then(function(element) {
                 expect(element).to.not.equal(null );
             });
     } );
 
-    test.it( 'shows the main header on add diets page', function() {
+    test.it( 'shows the main header on update diets page', function() {
         driver.findElement(By.tagName('h1')).then( function( element ) {
             element.getText().then(function(text) {
-                expect(text).to.equal('Time to make a diet');
+                expect(text).to.equal('Time to update a Diet');
             });
         });
     } );
 
-    test.it( 'accepts a diet from the form', function() {
+    test.it( 'Updates a diet from the form', function() {
         var input = driver.findElement(By.id('Protein'));
         input
             .then(function() {
@@ -57,7 +57,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('40');
+                element.sendKeys('50');
             } )
         var input = driver.findElement(By.id('Fats'));
         input
@@ -69,7 +69,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('20');
+                element.sendKeys('30');
             } )
         var input = driver.findElement(By.id('Carbs'));
         input
@@ -81,7 +81,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('60');
+                element.sendKeys('50');
             } )
         var input = driver.findElement(By.id('numMeals'));
         input
@@ -93,7 +93,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('4');
+                element.sendKeys('2');
             } )
         var input = driver.findElement(By.id('MealType'));
         input
@@ -105,7 +105,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('Snack');
+                element.sendKeys('Lunch');
             } )
         var input = driver.findElement(By.id('MealCalories'));
         input
@@ -117,7 +117,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('450');
+                element.sendKeys('400');
             } )
         var input = driver.findElement(By.id('MealTime'));
         input
@@ -129,7 +129,7 @@ test.describe('add Diets page', function() {
                 return element;
             } )
             .then(function(element) {
-                element.sendKeys('14.0');
+                element.sendKeys('13.0');
             } )
 
             .then(function() {
@@ -140,11 +140,11 @@ test.describe('add Diets page', function() {
             } )
 
             .then(function() {
-                driver.wait(until.elementLocated(By.id('addDiet')),2000);
+                driver.wait(until.elementLocated(By.id('updateDiet')),2000);
                 return driver.findElements(By.tagName('tr'));
             })
             .then( function( diet ) {
-                expect(diet.length).to.equal(noDiet+ 0) ;
+                expect(diet.length).to.not.equal(noDiet+ 0) ;
                 return diet;
             })
 
