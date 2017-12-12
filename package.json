@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "cross-env set NODE_ENV=test PORT=4000 mocha test/acceptance/"
 
   },
   "dependencies": {
