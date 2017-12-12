@@ -11,3 +11,4 @@ build/
 public/images/
  /dist
 dist/
+/coverage
