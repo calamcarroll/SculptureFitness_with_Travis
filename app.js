@@ -13,6 +13,7 @@ var ClientDietPrograms = require('./routes/ClientDietPrograms');
 var GymLocations = require('./routes/GymLocations');
 // var passport = require('passport'); todo still to be used for passport api
 var app = express();
+
 // var social = require('./passport/passport')(app,passport); todo still to be used
 
 
