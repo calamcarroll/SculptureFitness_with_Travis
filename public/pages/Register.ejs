@@ -1,7 +1,7 @@
 <div class="jumbotron text-center">
 
 
-    <div ng-controller="registerController">
+    <div ng-controller="registerController" id="register">
         <style>
             #success_message{ display: none;}
         </style>
@@ -10,12 +10,13 @@
 
                 <form ng-submit="addUser()"ngNativeValidate>
 
-                    <h2><b>Registration Form</b></h2>
+                    <h2>Registration Form</h2>
 
                     <div class="form-group" align="center">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input  type="text"
+                                    id="Username"
                                     name="user_name"
                                     placeholder="Username"
                                     ng-model="formData.Username"
@@ -28,6 +29,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input  name="first_name"
+                                    id="FirstName"
                                     placeholder="First Name"
                                     ng-model="formData.fName"
                                     class="form-control"
@@ -40,6 +42,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input name="last_name"
+                                   id="LastName"
                                    placeholder="Last Name"
                                    ng-model="formData.lName"
                                    class="form-control"
@@ -52,6 +55,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                             <input name="email"
+                                   id="Email"
                                    placeholder="E-Mail Address"
                                    ng-model="formData.Email"
                                    class="form-control"
@@ -64,6 +68,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input name="user_password"
+                                   id="Password"
                                    placeholder="Password"
                                    ng-model="formData.Password"
                                    class="form-control"
@@ -76,6 +81,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input  name="Weight"
+                                    id="Weight"
                                     placeholder="Weight"
                                     ng-model="formData.Weight"
                                     class="form-control"
@@ -88,6 +94,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input  name="Height"
+                                    id="Height"
                                     placeholder="Height"
                                     ng-model="formData.Height"
                                     class="form-control"
@@ -100,6 +107,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input  name="Body Fat"
+                                    id="BodyFat"
                                     placeholder="Body Fat"
                                     ng-model="formData.BodyFat"
                                     class="form-control"
@@ -117,7 +125,7 @@
                         <div class="col-md-4"><br>
                             <button type="submit"
                                     class="btn btn-warning"
-                                    ng-click="addUser()">  Register  <span class="glyphicon glyphicon-send"></span>
+                                    ng-click="addUser()" id="submit">  Register  <span class="glyphicon glyphicon-send"></span>
                             </button>
                         </div>
                     </div>

@@ -8,7 +8,6 @@ function registerController($scope, $http, $location) {
 
         $http.post('/users', $scope.formData)
             .success(function (data) {
-                alert('Congratulations ' + $scope.formData.fName + ' You have successfully registered ');
                 $scope.Users = data;
                 $location.path('/Login');
                 console.log(data);

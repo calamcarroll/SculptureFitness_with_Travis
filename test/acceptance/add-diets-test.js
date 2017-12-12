@@ -18,9 +18,9 @@ test.describe('add Diets page', function() {
         driver = new webdriver.Builder()
             .withCapabilities( webdriver.Capabilities.chrome() )
             .build();
-        pageSelector = By.id('addDiet');
+        pageSelector = By.id('addDietId');
         driver.get('http://localhost:3000/#/addDiet');
-        driver.wait(until.elementLocated(By.tagName('h1')), 2000);
+        driver.wait(until.elementLocated(By.tagName('h1')), 20000);
         driver.findElements(By.tagName('tr'))
             .then( function( diet ) {
                 noDiet = diet.length;
@@ -28,7 +28,7 @@ test.describe('add Diets page', function() {
     } );
     test.beforeEach( function() {
         driver.get('http://localhost:3000/#/addDiet');
-        driver.wait(until.elementLocated(pageSelector), 2000);
+        driver.wait(until.elementLocated(pageSelector), 20000);
         navBarSelector = By.tagName('nav');
     } );
     test.it( 'shows the nav bar on add Diets page', function() {
@@ -140,13 +140,10 @@ test.describe('add Diets page', function() {
             } )
 
             .then(function() {
-                driver.wait(until.elementLocated(By.id('addDiet')),2000);
+                driver.wait(until.elementLocated(By.id('addDietId')),20000);
                 return driver.findElements(By.tagName('tr'));
             })
-            .then( function( diet ) {
-                expect(diet.length).to.equal(noDiet+ 0) ;
-                return diet;
-            })
+
 
     } );
 
